@@ -49,3 +49,27 @@ cd /usr/src/app
 gem install rails
 rails new docker-demo --skip-test --skip-bundle
 ```
+
+## docker build
+
+```
+docker build [OPTIONS] PATH | URL | -
+```
+
+Build an image from a Dockerfile.
+
+## docker images
+
+List images.
+
+## docker run rails
+
+```
+docker run -p 3000:3000 CONTAINER-ID bin/rails s -b 0.0.0.0
+```
+
+## docker tag
+
+```
+docker tag CONTAINER-ID NAME[:TAG]
+```

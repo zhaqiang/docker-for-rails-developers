@@ -1,2 +1,2 @@
-//= link_tree ../images
+:close
 //= link_directory ../stylesheets .css

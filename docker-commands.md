@@ -73,3 +73,25 @@ docker run -p 3000:3000 CONTAINER-ID bin/rails s -b 0.0.0.0
 ```
 docker tag CONTAINER-ID NAME[:TAG]
 ```
+
+## docker-compose up
+
+```
+docker-compose up -d
+```
+
+## docker-compose ps
+
+## docker-compose [stop|start|restart] SERVICE-NAME
+
+## docker-compose logs -f SERVICE-NAME
+
+## docker-compose exec SERVICE-NAME COMMAND
+
+## docker-compose down
+
+## docker-compose prune
+
+## docker system prune
+
+Free up all resources.

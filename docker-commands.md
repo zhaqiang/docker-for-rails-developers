@@ -10,6 +10,14 @@ docker run ruby:2.6 ruby -e "puts :hello"
 
 man: `docker help run`
 
+### Rails commands
+
+```
+docker-compose run --rm web bin/rails db:create
+docker-compose exec web bin/rails g scaffold User first_name last_name
+docker-compose exec web bin/rails db:migrate
+```
+
 ## docker ps
 
 ```
@@ -84,6 +92,22 @@ docker-compose up -d
 
 ## docker-compose [stop|start|restart] SERVICE-NAME
 
+## docker-compose run
+
+```
+run [options] [-v VOLUME...] [-p PORT...] [-e KEY=VAL...] [-l KEY=VALUE...] SERVICE [COMMAND] [ARGS...]
+```
+
+Run a one-off command on a service.
+
+Example: `docker-compose run --rm redis redis-cli -h redis`
+
+## docker-compose up
+
+```
+docker-compose up -d SERVICE-NAME
+```
+
 ## docker-compose logs -f SERVICE-NAME
 
 ## docker-compose exec SERVICE-NAME COMMAND
@@ -95,3 +119,13 @@ docker-compose up -d
 ## docker system prune
 
 Free up all resources.
+
+## docker network ls
+
+## docker-compose rm
+
+```
+docker-compose rm [options] [SERVICE...]
+```
+
+Removes stopped service containers.
